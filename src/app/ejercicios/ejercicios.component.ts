@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjerciciosComponent implements OnInit {
 
+  ejercicio = 'Flexion';
+  
   constructor() { }
 
   ngOnInit(): void {
