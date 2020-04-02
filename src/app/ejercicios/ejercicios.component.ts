@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Ejercicio} from '../ejercicio';
 
 @Component({
   selector: 'app-ejercicios',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjerciciosComponent implements OnInit {
 
-  ejercicio = 'Flexion';
-  
+  ejercicio: Ejercicio={
+    id:1,
+    name:"Flexiones"
+  };
+
   constructor() { }
 
   ngOnInit(): void {
