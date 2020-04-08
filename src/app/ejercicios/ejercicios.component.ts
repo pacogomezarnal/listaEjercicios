@@ -10,12 +10,17 @@ import {EjercicioService} from '../ejercicio.service'
 })
 export class EjerciciosComponent implements OnInit {
 
-  ejercicios=Ejercicio[];
+  ejercicios:Ejercicio[];
   ejercicioSeleccionado:Ejercicio;
 
   constructor(private ejercicioService:EjercicioService) {  }
 
+  getEjercicios():void{
+    this.ejercicios=this.ejercicioService.getEjercicios();
+  }
+
   ngOnInit(): void {
+    this.getEjercicios();
   }
 
   onSelectEjercicio(ejercicio:Ejercicio):void{
