@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Observable,of} from 'rxjs';
 import {Ejercicio} from './ejercicio';
 import {EJERCICIOS} from './collection-ejercicios';
 
@@ -9,7 +10,7 @@ export class EjercicioService {
 
   constructor() { }
 
-  getEjercicios():Ejercicio[]{
-    return EJERCICIOS;
+  getEjercicios():Observable<Ejercicio[]>{
+    return of(EJERCICIOS);
   }
 }

@@ -13,13 +13,16 @@ export class EjerciciosComponent implements OnInit {
   ejercicios:Ejercicio[];
   ejercicioSeleccionado:Ejercicio;
 
-  constructor(private ejercicioService:EjercicioService) {  }
+  constructor(private ejercicioService:EjercicioService) {
+    console.log("----Componente Ejercicios CREADO ---");
+  }
 
   getEjercicios():void{
     this.ejercicios=this.ejercicioService.getEjercicios();
   }
 
   ngOnInit(): void {
+    console.log("----Componente Ejercicios[ngOnInit] ---");
     this.getEjercicios();
   }
 
