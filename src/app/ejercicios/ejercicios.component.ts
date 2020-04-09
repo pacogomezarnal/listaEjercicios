@@ -17,8 +17,9 @@ export class EjerciciosComponent implements OnInit {
     console.log("----Componente Ejercicios CREADO ---");
   }
 
+
   getEjercicios():void{
-    this.ejercicios=this.ejercicioService.getEjercicios();
+    this.ejercicioService.getEjercicios().subscribe(ejercicios=>this.ejercicios=ejercicios)
   }
 
   ngOnInit(): void {
