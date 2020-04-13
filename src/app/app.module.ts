@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EjerciciosComponent } from './ejercicios/ejercicios.component';
 import { EjercicioDetalleComponent } from './ejercicio-detalle/ejercicio-detalle.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EjerciciosComponent,
-    EjercicioDetalleComponent
+    EjercicioDetalleComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
