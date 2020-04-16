@@ -10,12 +10,16 @@ import {EjercicioService} from '../ejercicio.service'
 export class PanelComponent implements OnInit {
 
   ejercicios:Ejercicio[];
-  constructor(private ejercicioService:EjercicioService) { }
+  constructor(private ejercicioService:EjercicioService) {
+    console.log("----Componente Panel CREADO ---");
+  }
 
   ngOnInit(): void {
+    console.log("----Componente Panel[ngOnInit] ---");
+    this.getEjercicios();
   }
   getEjercicios():void{
-    this.ejercicioService.getEjercicios().subscribe(ejercicios=>this.ejercicios=ejercicios)
+    this.ejercicioService.getEjercicios().subscribe(ejercicios=>this.ejercicios=ejercicios.slice(1,5))
   }
 
 }
