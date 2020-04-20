@@ -13,4 +13,9 @@ export class EjercicioService {
   getEjercicios():Observable<Ejercicio[]>{
     return of(EJERCICIOS);
   }
+
+  getEjercicio(id:number):Observable<Ejercicio>{
+    return of(EJERCICIOS.find(ejercicio=>ejercicio.id===id));
+  }
+
 }
