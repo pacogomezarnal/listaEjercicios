@@ -1,7 +1,9 @@
 <h2>Listado Ejercicios</h2>
 <ul class="ejercicios">
   <li *ngFor="let ejercicio of ejercicios" (click)="onSelectEjercicio(ejercicio)" [class.selected]="ejercicio===ejercicioSeleccionado">
-    <span class="ejercicio">{{ejercicio.id}} </span>{{ejercicio.name}}
+    <a routerLink="/detalle/{{ejercicio.id}}">
+      <span class="ejercicio">{{ejercicio.id}} </span>{{ejercicio.name}}
+    </a>
   </li>
 </ul>
-<app-ejercicio-detalle [ejercicio]="ejercicioSeleccionado"></app-ejercicio-detalle>
+

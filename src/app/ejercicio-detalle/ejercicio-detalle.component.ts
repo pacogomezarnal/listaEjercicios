@@ -10,12 +10,12 @@ import {EjercicioService} from '../ejercicio.service'
 })
 export class EjercicioDetalleComponent implements OnInit {
 
-  @Input() ejercicio:Ejercicio;
+  ejercicio:Ejercicio;
 
   constructor(private route:ActivatedRoute,private ejercicioService:EjercicioService) { }
 
   ngOnInit(): void {
-    this.getEjercicio;
+    this.getEjercicio();
   }
 
   getEjercicio():void{
