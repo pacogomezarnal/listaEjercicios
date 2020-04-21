@@ -2,7 +2,7 @@
 <ul class="ejercicios">
   <li *ngFor="let ejercicio of ejercicios" (click)="onSelectEjercicio(ejercicio)" [class.selected]="ejercicio===ejercicioSeleccionado">
     <a routerLink="/detalle/{{ejercicio.id}}">
-      <span class="ejercicio">{{ejercicio.id}} </span>{{ejercicio.name}}
+      <span class="badge">{{ejercicio.id}} </span>{{ejercicio.name}}
     </a>
   </li>
 </ul>
