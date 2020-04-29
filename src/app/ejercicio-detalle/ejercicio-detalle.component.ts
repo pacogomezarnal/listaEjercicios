@@ -18,6 +18,7 @@ export class EjercicioDetalleComponent implements OnInit {
               private location:Location) { }
 
   ngOnInit(): void {
+    console.log("----Componente Ejercicios Detalle[ngOnInit] ---");
     this.getEjercicio();
   }
 

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { EjerciciosComponent } from './ejercicios/ejercicios.component';
 import { EjercicioDetalleComponent } from './ejercicio-detalle/ejercicio-detalle.component';
 import { PanelComponent } from './panel/panel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PanelComponent } from './panel/panel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
