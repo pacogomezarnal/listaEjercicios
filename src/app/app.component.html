@@ -1,7 +1,10 @@
-<h1>{{title}}</h1>
-<nav>
-  <button mat-raised-button color="primary" routerLink="/ejercicios">Ejercicios</button>
-  <a mat-raised-button routerLink="/panel">Panel</a>
-  <a mat-raised-button routerLink="/ejercicios">Ejercicios</a>
-</nav>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>{{title}}</span>
+    <nav>
+      <button mat-flat-button color="link" routerLink="/panel">Panel</button>
+      <button mat-flat-button color="link" routerLink="/ejercicios">Ejercicios</button>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
 <router-outlet></router-outlet>
