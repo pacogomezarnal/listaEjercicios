@@ -3,8 +3,11 @@
     <span>{{title}}</span>
     <nav>
       <button mat-flat-button color="link" routerLink="/panel">Panel</button>
-      <button mat-flat-button color="link" routerLink="/ejercicios">Ejercicios</button>
+      <button  mat-flat-button color="link" routerLink="/ejercicios">Ejercicios</button>
     </nav>
+    <button mat-flat-button color="primary" aria-label="Example icon button with a home icon" routerLink="/panel">
+      <mat-icon>home</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
